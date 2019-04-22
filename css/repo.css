@@ -1,0 +1,73 @@
+.repo {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  width: 75%;
+  padding: 0.3em;
+  overflow: auto;
+  margin: 0.2em;
+}
+
+.repo:hover {
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+.repo .title {
+    position: relative;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16pt;
+}
+
+.repo .desc {
+    position: relative;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.repo .langs {
+    position: relative;
+  text-align: right;
+  width: 50%;
+  margin: 1em;
+}
+
+.lang {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.1em;
+}
+
+.html {
+  background-color: #e34c26;
+}
+
+.css {
+  background-color: #5c0080;
+}
+
+.javascript {
+  background-color: #f1e05a;
+}
+
+.active {
+  border: 1px solid blue;
+}
+
+.bottom-nav {
+  display: flex;
+  width: 100%;
+}
+
+.expand {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 1em;
+}
+
+.expand:hover {
+  background-color: whitesmoke;
+}
