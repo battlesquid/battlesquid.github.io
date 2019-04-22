@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Kai';
+    src: url('BebasKai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+#header {
+  background-color: #333;
+  color: whitesmoke;
+  padding: 0.2em;
+    font-family: 'Kai', 'Trebuchet MS', sans-serif;
+}
+
+#name {
+  text-align: center;
+  font-size: 54pt;
+}
+
+#mini-bio {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+#repositories {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+#footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30pt;
+  width: 100%;
+  height: 10%;
+  background-color: #222;
+}
+
+#footer a {
+  color: #888;
+  margin: 0.2em;
+}
+
+#footer a:hover {
+  color: #999;
+}
+
+#splash {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  text-align: center;
+  font-family: 'Kai', sans-serif;
+  font-size: 15pt;
+  margin: 1em;
+}
