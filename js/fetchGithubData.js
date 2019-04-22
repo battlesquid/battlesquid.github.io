@@ -31,7 +31,7 @@ async function fetchGithubRepos() {
       final = res;
       document.querySelector('#mini-bio').textContent = res.data.user.bio;
     })
-    .catch(e => console.log(e));
+    .catch(e => console.re.log(e));
   return filterRepoData(final);
 };
 
