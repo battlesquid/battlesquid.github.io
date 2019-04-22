@@ -12,7 +12,7 @@ const filterRepoData = repos => {
 
   //filter out repos not marked as complete
   r = r.filter(repo => repo.repositoryTopics.nodes.find(n => n.topic.name === 'sq-c0mplete') !== undefined);
-  return { r: r, repos: repos };
+  return { r, repos };
 };
 
 async function fetchGithubRepos() {
