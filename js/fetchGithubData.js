@@ -21,7 +21,7 @@ async function fetchGithubRepos() {
     method: "post",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer 79dd1862dc6b83503cf1be16c70cda99ad0f828f",
+      "Authorization": "Bearer fd9ba2eeace090e6e54d33abe2fcaed5fb1c56ab",
       "User-Agent": "Battlesquid"
     },
     body: JSON.stringify(query)
