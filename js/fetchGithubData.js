@@ -16,23 +16,18 @@ const filterRepoData = repos => {
 };
 
 async function fetchGithubRepos() {
-    let final;
     const res = await fetch("https://api.github.com/graphql", {
-            method: "post",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${atob('OGRkZDE5MTAwNjJhMGQwNjI3MDkyZmFmNDBjZTU4ZjMzZTcxY2Y5OA==')}`,
-                "User-Agent": "Battlesquid"
-            },
-            body: JSON.stringify(query)
-        })
-        .then(json => json.json())
-        .then(res => {
-            final = res;
-            document.querySelector('#mini-bio').textContent = res.data.user.bio;
-        })
-        .catch(e => console.re.log(e));
-    return filterRepoData(final);
+        method: "post",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${atob('OGRkZDE5MTAwNjJhMGQwNjI3MDkyZmFmNDBjZTU4ZjMzZTcxY2Y5OA==')}`,
+            "User-Agent": "Battlesquid"
+        },
+        body: JSON.stringify(query)
+    })
+    const json = await res.json();
+    document.querySelector('#mini-bio').textContent = json.data.user.bio;
+    return filterRepoData(json)
 };
 
 fetchGithubRepos()
