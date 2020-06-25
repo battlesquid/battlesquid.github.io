@@ -20,13 +20,14 @@ async function fetchGithubRepos() {
         method: "post",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${atob('OGRkZDE5MTAwNjJhMGQwNjI3MDkyZmFmNDBjZTU4ZjMzZTcxY2Y5OA==')}`,
+            "Authorization": `Bearer ${atob('NzIyZGM2ZTdkNTRhMDU3MWY5YjAxZTQ0Mzk5MWY5YjZmZTg1NThlZg==')}`,
             "User-Agent": "Battlesquid"
         },
         body: JSON.stringify(query)
     })
     const json = await res.json();
-    document.querySelector('#mini-bio').textContent = json.data.user.bio;
+    console.log(json);
+    document.querySelector('#bio').textContent = json.data.user.bio;
     return filterRepoData(json)
 };
 
