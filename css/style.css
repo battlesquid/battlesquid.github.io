@@ -1,10 +1,8 @@
+/* Vice City Sans: https://www.dafont.com/vice-city-sans.font */
 @font-face {
   font-family: "Vice";
-  src: url("ViceCitySans.woff2") format("woff2"),
-    url("ViceCitySans.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  src: url("../fonts/ViceCitySans.woff2") format("woff2"),
+    url("../fonts/ViceCitySans.woff") format("woff");
 }
 
 html,
@@ -19,16 +17,9 @@ body {
   align-items: center;
 }
 
-#body {
-  /* border-top: 0.5em solid #000;
-  border-bottom: 0.5em solid #000; */
-  padding: 5em;
-}
-
 #name {
   font-family: "Vice", sans-serif;
-  font-weight: 500;
-  font-size: 5em;
+  font-size: 64pt;
   letter-spacing: -10px;
   text-align: center;
 }
@@ -36,35 +27,14 @@ body {
 #bio {
   text-align: center;
   font-family: sans-serif;
-  font-size: 20px;
-  margin-top: -10px;
+  font-size: 12pt;
 }
 
-.expandable {
-  border: 1px solid #000;
-  border-top: 0.5em solid #000;
-  height: 0;
-  margin-bottom: 1em;
-}
-
-#bottom-text {
+#links {
   text-align: center;
   font-size: 35pt;
 }
 
-#bottom-text a {
-  color: #000;
-}
-
-.open-transition {
-  height: inherit;
-}
-
-.tab {
-  border-top: 10px solid #000;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  height: 0;
-  width: 20px;
-  margin: 0 auto;
+#links a {
+  color: #000000;
 }
