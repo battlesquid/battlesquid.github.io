@@ -11,7 +11,7 @@ const fetchBio = async () => {
         const data = await response.json();
         bio.textContent = data.bio;
     } else {
-        bio.textContent = "student studying software engineering";
+        bio.textContent = "software engineer";
     }
 }
 
