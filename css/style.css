@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 /* Vice City Sans: https://www.dafont.com/vice-city-sans.font */
 @font-face {
   font-family: "Vice";
