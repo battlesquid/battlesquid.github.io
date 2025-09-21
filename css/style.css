@@ -10,8 +10,8 @@
 
 html,
 body {
-  background-color: #1a1b26;
-  color: #c0caf5;
+  background-color: #111112;
+  color: #ffffff;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -36,25 +36,22 @@ body {
 }
 
 .name {
-  font-family: "Vice", sans-serif;
-  font-size: 5.333rem;
-  letter-spacing: -10px;
-  text-align: center;
 }
 
 #bio {
-  text-align: center;
-  font-family: "Vice", sans-serif;
   font-size: 1rem;
 }
 
 .links {
-  text-align: center;
-  font-size: 35pt;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .links a {
-  color: #c0caf5;
+  color: #272727;
+  text-decoration: none;
+  font-size: 2.5rem;
 }
 
 .github {
@@ -67,4 +64,29 @@ body {
 
 .linkedin {
   color: #7aa2f7;
+}
+
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.geist {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.stacked-text {
+    line-height: 80%;
 }
