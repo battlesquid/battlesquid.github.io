@@ -1,11 +1,17 @@
 * {
   box-sizing: border-box;
 }
-/* Vice City Sans: https://www.dafont.com/vice-city-sans.font */
-@font-face {
-  font-family: "Vice";
-  src: url("../fonts/ViceCitySans.woff2") format("woff2"),
-    url("../fonts/ViceCitySans.woff") format("woff");
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.geist {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 html,
@@ -22,9 +28,49 @@ body {
   align-items: center;
 }
 
+a {
+  color: whitesmoke;
+  font-weight: lighter;
+}
+
+a:hover {
+  background-color: whitesmoke;
+  color: #111112;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#bio {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-left: 6px;
+}
+
+#link-navigation,
+#page-navigation {
+  display: flex;
+  gap: 5px;
+}
+
+#link-navigation {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#page-navigation {
+  margin-left: 6px;
+}
+
 .divider {
-  border: 1px solid #000000;
-  height: 100%;
+  border-bottom: 1px solid #222222;
+  width: 100%;
+  height: 0;
 }
 
 .content {
@@ -35,58 +81,19 @@ body {
   height: 100%;
 }
 
-.name {
-}
-
-#bio {
-  font-size: 1rem;
-}
-
-.links {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.links a {
-  color: #272727;
-  text-decoration: none;
-  font-size: 2.5rem;
-}
-
-.github {
-  color: #565f89;
-}
-
-.stackoverflow {
-  color: #ff9e64;
-}
-
-.linkedin {
-  color: #7aa2f7;
-}
-
-
-.jetbrains-mono {
-  font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.geist {
-  font-family: "Geist", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.title {
-    font-size: 6rem;
+#title {
+  font-size: 6rem;
+  letter-spacing: -5px;
 }
 
-.stacked-text {
-    line-height: 80%;
+#title div {
+  line-height: 80%;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
