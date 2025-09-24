@@ -17,21 +17,26 @@ const fetchBio = async () => {
     }
 }
 
-const scrambleText = (text) => {
-    return [...text].map(() => String.fromCharCode(48 + Math.floor(Math.random() * 50))).join("");
+const scrambleText = (text, len = 0) => {
+    const prefix = text.substring(0, len);
+    const rest = text.substring(len, text.length);
+    const scrambled = [...rest].map(() => String.fromCharCode(48 + Math.floor(Math.random() * 50))).join("");
+    return `${prefix}${scrambled}`;
 }
 
+const sleep = async (ms) => new Promise((resolve) => setTimeout(() => resolve(), ms));
+
 const load = async () => {
-    const interval = setInterval(() => {
-        const text = scrambleText("00000000000");
-        bioElement.textContent = text;
+    const loadInterval = setInterval(() => {
+        bioElement.textContent = scrambleText("00000000000");
     }, 100);
 
     const bio = await fetchBio();
-    setTimeout(() => {
-        clearInterval(interval);
-        bioElement.textContent = bio;
-    }, 1000);
+    clearInterval(loadInterval);
+    for (let i = 1; i < bio.length + 1; i++) {
+        bioElement.textContent = scrambleText(bio, i);
+        await sleep(75);
+    }
 }
 
 load();

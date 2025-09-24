@@ -45,13 +45,12 @@ a:hover {
 }
 
 #bio {
-  font-size: 1.5rem;
+  font-size: calc(0.5rem + 1.5vw);
   text-transform: uppercase;
   font-weight: lighter;
   margin-left: 6px;
 }
 
-#link-navigation,
 #page-navigation {
   display: flex;
   gap: 5px;
@@ -86,7 +85,7 @@ a:hover {
 }
 
 #title {
-  font-size: 6rem;
+  font-size: calc(1rem + 5vw);
   letter-spacing: -5px;
 }
 
